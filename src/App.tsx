@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
-import Catalogo from "./pages/Catalogo";
 import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
 import NotFound from "./pages/NotFound";
@@ -22,7 +21,6 @@ const App = () => (
         <main>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/catalogo" element={<Catalogo />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="*" element={<NotFound />} />

@@ -62,9 +62,6 @@ const Index = () => (
         </SectionReveal>
         <SectionReveal delay={0.3}>
           <div className="flex flex-wrap gap-4">
-            <Link to="/catalogo" className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97] shadow-lg shadow-primary/25">
-              Ver catálogo completo →
-            </Link>
             <Link to="/contato" className="inline-flex items-center gap-2 rounded-lg border-2 border-primary-foreground/30 px-6 py-3 font-semibold text-primary-foreground transition-all duration-200 hover:bg-primary-foreground/10 active:scale-[0.97]">
               Fale conosco
             </Link>
@@ -128,11 +125,6 @@ const Index = () => (
             </SectionReveal>
           ))}
         </div>
-        <SectionReveal className="mt-10 text-center">
-          <Link to="/catalogo" className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97]">
-            Ver todos os produtos →
-          </Link>
-        </SectionReveal>
       </div>
     </section>
 

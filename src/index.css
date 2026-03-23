@@ -6,6 +6,11 @@
 
 @layer base {
   :root {
+    --navy-deep: #1a2840;
+    --navy: #243851;
+    --red: #dc1b17;
+    --gold: #e7c30b;
+
     --background: 0 0% 100%;
     --foreground: 219 100% 18%;
 
@@ -61,6 +66,12 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
   }
+}
+
+.price {
+  color: var(--navy);
+  font-weight: 800;
+  border-bottom: 2px solid var(--gold);
 }
 
 @layer utilities {

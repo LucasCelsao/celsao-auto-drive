@@ -29,7 +29,7 @@ const Contato = () => {
       <section className="py-20">
         <div className="container">
           <SectionReveal>
-            <h1 className="text-4xl font-bold mb-4 text-balance">Entre em contato</h1>
+            <h1 className="text-4xl font-[800] text-[#243851] mb-4 text-balance">Entre em contato</h1>
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl text-pretty">
               Nossa equipe está pronta para atender você. Tire suas dúvidas, solicite orçamentos ou agende uma visita à nossa loja.
             </p>
@@ -86,7 +86,7 @@ const Contato = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
+                  className="w-full rounded-lg bg-[#e7c30b] text-[#1a1a1a] font-[800] px-6 py-3 transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
                 >
                   Enviar mensagem
                 </button>
@@ -119,14 +119,44 @@ const Contato = () => {
                   </div>
                 ))}
 
-                {/* Map */}
-                <div className="rounded-xl overflow-hidden border border-border shadow-sm">
-                  <iframe
-                    title="Localização Celsão Auto Peças"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-46.47%2C-23.15%2C-46.44%2C-23.13&layer=mapnik"
-                    className="w-full h-64"
-                    loading="lazy"
-                  />
+                {/* Maps */}
+                <div className="space-y-6 mt-6">
+                  <div className="rounded-xl overflow-hidden border border-border shadow-sm">
+                    <h4 className="bg-[#243851] text-white py-2 px-4 text-sm font-[800]">Bom Jesus dos Perdões</h4>
+                    <iframe
+                      title="Mapa Bom Jesus dos Perdões"
+                      src="https://maps.google.com/maps?q=Avenida+Santos+Dumont+425+Bom+Jesus+dos+Perdoes+SP&output=embed"
+                      width="100%"
+                      height="220"
+                      style={{ border: 0, borderRadius: '0 0 12px 12px' }}
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="rounded-xl overflow-hidden border border-border shadow-sm">
+                    <h4 className="bg-[#243851] text-white py-2 px-4 text-sm font-[800]">Nazaré Paulista</h4>
+                    <iframe
+                      title="Mapa Nazaré Paulista"
+                      src="https://maps.google.com/maps?q=Rua+Jose+Goncalves+332+Nazare+Paulista+SP&output=embed"
+                      width="100%"
+                      height="220"
+                      style={{ border: 0, borderRadius: '0 0 12px 12px' }}
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="rounded-xl overflow-hidden border border-border shadow-sm">
+                    <h4 className="bg-[#243851] text-white py-2 px-4 text-sm font-[800]">Atibaia</h4>
+                    <iframe
+                      title="Mapa Atibaia"
+                      src="https://maps.google.com/maps?q=Praca+24+de+Junho+40+Atibaia+SP&output=embed"
+                      width="100%"
+                      height="220"
+                      style={{ border: 0, borderRadius: '0 0 12px 12px' }}
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
               </div>
             </SectionReveal>
